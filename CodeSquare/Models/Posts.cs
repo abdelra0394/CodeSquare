@@ -8,5 +8,7 @@
         public string? userId { get; set; }
         public DateTime postedAt { get; set; }
 
+        public IList<Likes>? likes { get; set; }
+
     }
 }

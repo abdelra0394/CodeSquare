@@ -9,10 +9,12 @@ namespace CodeSquare.Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Likes>().HasKey(e => e.Id);
+            modelBuilder.Entity<Likes>().HasKey(e => new { e.UserId, e.PostId});
         }
         public DbSet<Posts> posts { get; set; } = null!;
         public DbSet<Users> users { get; set; } = null!;
+        public DbSet<Likes> likes { get; set; } = null!;
+
 
     }
 }

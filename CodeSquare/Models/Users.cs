@@ -8,5 +8,6 @@
         public string? email { get; set; }
 
 
+        public IList<Likes>? likes { get; set; }
     }
 }
