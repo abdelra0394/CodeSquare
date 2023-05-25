@@ -3,10 +3,10 @@
     public class Likes
     {
         public int PostId { get; set; }
-        public Posts? posts { get; set; }
+        public Post? posts { get; set; }
 
         public int UserId { get; set; }
-        public Users? users { get; set; }
+        public User? users { get; set; }
 
 
 

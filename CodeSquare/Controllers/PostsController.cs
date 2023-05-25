@@ -5,7 +5,7 @@ namespace CodeSquare.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PostsController : ControllerBase
+    public class PostController : ControllerBase
     {
 
     }
